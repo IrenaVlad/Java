@@ -26,5 +26,6 @@ public class Homework2
                              break;
              }
          System.out.println(sb);
+         iScanner.close();
     }
 }
