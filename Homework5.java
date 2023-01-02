@@ -4,7 +4,7 @@ import java.util.Map;
 public class Homework5 {
     public static void main(String[] args) {
         HashMap<Integer, String> fio = new HashMap<>();
-        final String Print = "%s. %s%n";
+        final String getStr = "%s. %s%n";
 
         fio.put(0, "Иванов Иван Иванович 45 м");
         fio.put(1, "Петров Петр Петрович 15 м");
@@ -16,7 +16,7 @@ public class Homework5 {
          fio.replaceAll(
                  (k, v) -> v.substring(0, v.length() - 1) + String.valueOf(v.charAt(v.length()-1)).toUpperCase()
          );
-         fio.forEach((k, v) -> System.out.printf(Print, k, v));
+         fio.forEach((k, v) -> System.out.printf(getStr, k, v));
          System.out.println();
 
          System.out.println("Коллекция с измененными значениями инициалов:");
